@@ -1,0 +1,125 @@
+body {
+  background-color: #0096ff;
+  color: #ffffff;
+  font-family: system-ui, -apple-system, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  margin: 0;
+}
+
+.exhibit-card {
+  background-color: #90d5ff;
+  border: 1px solid #334155;
+  border-radius: 16px;
+  padding: 2rem;
+  max-width: 420px;
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.5);
+}
+
+/* Stacking and sizing the portrait images */
+.portrait-wrapper {
+  position: relative;
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  overflow: hidden;
+  border: 4px solid #00008b;
+  margin-bottom: 1.5rem;
+  flex-shrink: 0;
+}
+
+.avatar-img {
+  position: absolute;
+  top: 0;
+  left: 20px;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: none; /* Hide all images by default */
+}
+
+.avatar-img.active {
+  display: block; /* Show only active image */
+}
+
+/* Controls & Response styling */
+.input-container {
+  display: flex;
+  gap: 0.5rem;
+  width: 100%;
+  margin-bottom: 0.75rem;
+}
+
+input[type="text"] {
+  flex: 1;
+  padding: 0.75rem;
+  border-radius: 8px;
+  border: 1px solid #334155;
+  background-color: #040273;
+  color: white;
+  font-size: 0.95rem;
+}
+
+.btn {
+  padding: 0.75rem 1.25rem;
+  background-color: #f59e0b;
+  color: #000000;
+  font-weight: bold;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background-color: #d97706;
+}
+
+.subtext {
+  font-size: 0.8rem;
+  color: #00008b;
+  margin-top: 0;
+  margin-bottom: 1.25rem;
+}
+
+.response-box {
+  background-color: #276ab3;
+  border-left: 4px solid #f59e0b;
+  padding: 1rem;
+  color: white;
+  border-radius: 6px;
+  font-size: 0.95rem;
+  line-height: 1.5;
+  text-align: left;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.UserInput {
+  color: white;
+}
+
+.project-title {
+  color: #ffffff;
+  font-size: 1.75rem;
+  font-weight: 700;
+  text-align: center;
+  margin: 0 0 0.25rem 0;
+  letter-spacing: 0.5px;
+}
+
+.project-subtitle {
+  color: var(--accent, #f59e0b); /* Uses your gold theme color or fallback */
+  font-size: 0.95rem;
+  text-align: center;
+  margin: 0 0 1.5rem 0;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
