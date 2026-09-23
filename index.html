@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sam King MBE - Interactive AI Exhibit</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <main class="exhibit-card">
+      <h2 class="title">Sam King MBE</h2>
+      <p class="project-subtitle">Interactive Educational Portrait</p>
+      <!-- Avatar Container -->
+      <div class="portrait-wrapper">
+        <img
+          id="avatarClosed"
+          src="images/Sam-closed-mouth.png"
+          alt="Sam King MBE - Default"
+          class="avatar-img active"
+        />
+        <img
+          id="avatarBlink"
+          src="images/Sam-blinking.png"
+          alt="Sam King MBE - Blinking"
+          class="avatar-img"
+        />
+        <img
+          id="avatarOpen"
+          src="images/Sam-mouth-open.png"
+          alt="Sam King MBE - Talking"
+          class="avatar-img"
+        />
+      </div>
+
+      <!-- User Input Section -->
+      <div class="input-container">
+        <input
+          class="UserInput"
+          type="text"
+          id="userInput"
+          placeholder="Ask Mr King about Windrush, RAF, or Mayor..."
+        />
+        <button id="sendBtn" class="btn">Ask Mr King</button>
+      </div>
+
+      <p class="subtext">
+        Type a question above or click Ask Mr King to hear him respond.
+      </p>
+
+      <!-- Response Box -->
+      <div id="responseBox" class="response-box">
+        "Greetings! I am Sam King. Ask me about my journey on the Windrush, my
+        time in the RAF, or serving as Mayor of Southwark."
+      </div>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>
